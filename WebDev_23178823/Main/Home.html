@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Launch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            background: white
+        }
+
+        .navbar {
+            padding-top: 29px;
+            padding-bottom: 29px;
+        }
+
+        .navbar-brand img {
+            max-height: 200px;
+            width: 200px;
+        }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar {
+            background: #17a2b8;
+        }
+
+        .navbar-brand {
+            display: flex;
+            position: absolute;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+
+        .card-body {
+            background: #17a2b8;
+            color: white
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                text-align: right;
+            }
+
+            .navbar-nav {
+                margin-left: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html"><img src="/Images/LL.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login_signup.php"> Log In </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html"> Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                    class="d-block w-100" alt="Programming Courses">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Learn Programming</h5>
+                        <h4>Enhance your coding skills with expert-led courses.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png"
+                    class="d-block w-100" alt="Design Courses">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Learn Design</h5>
+                        <h4>Learn UI/UX principles.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.wtluk.com/wp-content/uploads/2020/09/IT-Network.jpg" class="d-block w-100"
+                    alt="IT Courses">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Explore IT Fields</h5>
+                        <h4>Discover a wide range of IT-related courses.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container mt-5">
+        <h2 class="section-title">Explore Our Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://venturebeat.com/wp-content/uploads/2021/11/developer-getty.jpeg?w=400"
+                        class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming Basics</h5>
+                        <p class="card-text">Kickstart your programming journey with foundational courses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.bettercoder.io/images/tests/ux.png" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX Design</h5>
+                        <p class="card-text">Learn how to create beautiful and user-friendly designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://cdn.prod.website-files.com/66b4dc1a480042afaa39c745/66c7518adac682bd3ecb927c_66b4dc1a480042afaa39c999_cybersecurity-essentials-course-tile.png"
+                        class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">IT Essentials</h5>
+                        <p class="card-text">Understand the fundamentals of online security and Networking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
